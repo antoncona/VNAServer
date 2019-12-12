@@ -1,0 +1,25 @@
+<div class='container text-center'>
+    <h1>Articles1</h1>
+    <div class="card" style="width: 95%;" *ngFor="let article of articles2">
+        <img class="card-img-top" [src]="article.urlToImage" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{article.title}}</h5>
+            <p class="card-text">{{article.description}}</p>
+            <p class="card-text">{{article.content}}</p>
+            Published at: {{article.publishedAt}} <br/> Author: {{article.author}}<br/> Source: {{article.source.name}}<br/>
+            <a href="{{article.url}}" class="btn btn-primary">Mas detalles..</a>
+        </div>
+    </div>
+    <h1>Articles2</h1>
+
+    <div class="card" style="width: 95%;" *ngFor="let article of articles1">
+        <img class="card-img-top" [src]="article.urlToImage" alt="Card image cap">
+        <div class="card-body">
+            <h5 class="card-title">{{article.title}}</h5>
+            <p class="card-text">{{article.description}}</p>
+            <p class="card-text">{{article.content}}</p>
+            Published at: {{article.publishedAt}} <br/> Author: {{article.author}}<br/> Source: {{article.source.name}}<br/>
+            <a href="{{article.url}}" class="btn btn-primary">Mas detalles..</a>
+        </div>
+    </div>
+</div>
